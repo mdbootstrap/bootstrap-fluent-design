@@ -1,0 +1,22 @@
+{
+  "name": "bootstrap-fluent",
+  "version": "4.0.0",
+  "main": "css/fluent.css",
+  "repository": "https://github.com/mdbootstrap/bootstrap-fluent-design.git",
+  "author": "MDBootstrap",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.1.2",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.23.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-minify": "^2.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  }
+}

@@ -1,0 +1,21 @@
+// Colors
+@each $key,
+$val in $full-palette {
+  .#{$key} {
+    background-color: $val !important;
+  }
+}
+
+@each $key,
+$val in $fluent-colors {
+  .bg-#{$key} {
+    background-color: $val !important;
+  }
+}
+
+@each $key,
+$val in $fluent-colors {
+  .text-#{$key} {
+    color: $val !important;
+  }
+}

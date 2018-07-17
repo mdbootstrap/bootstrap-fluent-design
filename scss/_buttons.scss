@@ -1,0 +1,69 @@
+// Buttons
+.btn {
+  @include button-size(8px, 18px, 1rem);
+  margin: $btn-margin-basic;
+  border-width: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  white-space: normal;
+  word-wrap: break-word;
+  font-weight: 400;
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    outline: 0;
+  }
+  &:focus {
+    border: 2px solid #000;
+    outline: none;
+    box-shadow: none;
+  }
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    box-shadow: none;
+  }
+  .mi {
+    font-size: .8rem;
+  }
+  &.btn-sm {
+    @include button-size(4px, 10px, 15px);
+  }
+  &.btn-lg {
+    @include button-size(16px, 26px, 15px);
+  }
+  &.btn-welcome {
+    color: #fff;
+    display: inline-block;
+    margin-top: 12px;
+    border-radius: 2px;
+    background: $turquoise;
+    font-weight: 400;
+    &:hover{
+      color: $white-base !important;
+      border-color: #fff;
+      background-color: $black-base !important;
+      box-shadow: 0 4px 8px 0 rgba($black-base, .2);
+    }
+  }
+  &.btn-link {
+    border: none;
+    color: #212121;
+    &:hover {
+      box-shadow: none;
+      color: $dark-blue;
+    }
+    &:focus {
+      color: $dark-blue;
+      border: none;
+    }
+  }
+}
+@each $btn_name, $color_value in $fluent-colors {
+  @include make-button($btn_name, $color_value);
+  @include make-outline-button($btn_name, $color_value);
+}
+.btn-group {
+  .btn {
+    margin: 0;
+  }
+}

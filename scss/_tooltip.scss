@@ -1,0 +1,33 @@
+.tooltip {
+  &-inner {
+    background-color: rgb(242, 242, 242);
+    color: $black-base;
+    border-radius: 0;
+    border: 1px solid rgb(204, 204, 204);
+  }
+  &.show {
+    opacity: 1;
+  }
+  & .arrow {
+    display: none;
+  }
+}
+.bs-tooltip-top,
+.bs-tooltip-auto[x-placement^="top"] {
+  padding: .2rem 0 !important;
+}
+.bs-tooltip-right,
+.bs-tooltip-auto[x-placement^="right"] {
+  padding: 0 .2rem !important;
+}
+.bs-tooltip-bottom,
+.bs-tooltip-auto[x-placement^="bottom"] {
+  padding: .2rem 0 !important;
+}
+.bs-tooltip-left,
+.bs-tooltip-auto[x-placement^="left"] {
+  padding: 0 .2rem !important;
+}
+.mi-Accept:before {
+  content: "\EA01"
+}

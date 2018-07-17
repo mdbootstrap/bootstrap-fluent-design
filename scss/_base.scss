@@ -1,0 +1,18 @@
+
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 300;
+}
+
+a {
+  color: $link-color;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+

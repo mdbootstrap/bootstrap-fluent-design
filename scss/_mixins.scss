@@ -1,0 +1,91 @@
+// Mixins
+// Text color function
+@function set-notification-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return $black-base; // Lighter backgorund, return dark color
+  }
+  @else {
+    @return $white-base; // Darker background, return light color
+  }
+}
+
+// Button size
+@mixin button-size($padding-y, $padding-x, $font-size) {
+  padding: $padding-y $padding-x;
+  font-size: $font-size;
+}
+
+// Make button
+@mixin make-button ($name, $color) {
+  .btn-#{$name} {
+    background-color: $color !important;
+    color: set-notification-text-color($color) !important;
+    border-color: $color;
+    &:hover {
+      background-color: lighten($color, 5%);
+      border-color: $color;
+    }
+    &:focus,
+    &.focus {
+      box-shadow: none;
+    }
+    &:focus,
+    &:active,
+    &.active {
+      background-color: darken($color, 20%);
+    }
+    &.dropdown-toggle {
+      background-color: $color !important;
+      &:hover,
+      &:focus {
+        background-color: lighten($color, 5%) !important;
+      }
+    }
+    &:not([disabled]):not(.disabled):active,
+    &:not([disabled]):not(.disabled).active,
+    .show>&.dropdown-toggle {
+      box-shadow: none;
+      background-color: darken($color, 20%) !important;
+    }
+    &:not([disabled]):not(.disabled):active:focus,
+    &:not([disabled]):not(.disabled).active:focus,
+    .show>&.dropdown-toggle:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+// Make outline button
+@mixin make-outline-button ($name, $color) {
+  .btn-outline-#{$name} {
+    border: 2px solid $color !important;
+    background-color: transparent;
+    color: $color !important;
+    &:hover {
+      color: set-notification-text-color($color) !important;
+      background-color: $color;
+    }
+    &:active,
+    &.active {
+      background-color: darken($color, 20%);
+    }
+    &:not([disabled]):not(.disabled):active,
+    &:not([disabled]):not(.disabled).active,
+    .show>&.dropdown-toggle {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border-color: $color !important;
+    }
+    &:not([disabled]):not(.disabled):active:focus,
+    &:not([disabled]):not(.disabled).active:focus,
+    .show>&.dropdown-toggle:focus {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+// Keyframes
+@mixin keyframes($animation-name) {
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}

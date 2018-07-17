@@ -1,0 +1,88 @@
+.card {
+  border: 0;
+  box-shadow: 0 5px 8px rgba($black-base, .1);
+  transition: box-shadow .6s;
+  transition-timing-function: cubic-bezier(.16, 1, .29, .99);
+  border-radius: 0;
+  &[class*="border"] {
+    border: 1px solid #e9e9e9;
+    box-shadow: none;
+  }
+  .card-body {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 400;
+    }
+    a {
+      text-overflow: clip;
+      .mi {
+        margin-left: 0;
+        transition: margin-left .8s;
+        font-size: .8rem;
+        &:hover {
+          margin-left: .7rem;
+          transition: margin-left .8s;
+        }
+      }
+    }
+    .card-text {
+      color: #747373;
+      font-size: .9rem;
+      font-weight: 400;
+    }
+    ul {
+      padding-left: 0;
+      li {
+        list-style-type: none;
+        .mi {
+          padding-right: .5rem;
+        }
+      }
+    }
+  }
+  &-img-top {
+    border-radius: 0;
+  }
+  .list-group-item:first-child,
+  .list-group-item:last-child {
+    border-radius: 0;
+  }
+  .btn {
+    .mi {
+      font-size: .8rem;
+    }
+  }
+  .card-square {
+    width: 8rem;
+    height: 8rem;
+    font-size: 3rem;
+  }
+    .navbar-toggler{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
+    }
+
+}
+
+.card-hoverable {
+  color: rgb(80, 80, 80);
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  max-width: 25rem;
+  position: relative;
+  backface-visibility: hidden;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px, rgba(0, 0, 0, 0.05) 0px 0.5px 1px;
+  transition: all 0.333s ease-out;
+  border-radius: 4px;
+  &:hover {
+    transform: translate3d(0px, -1px, 0px);
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px, rgba(0, 0, 0, 0.18) 0px 4px 11px;
+  }
+}
+
+.card-img{
+  border-radius: 0 !important;
+}

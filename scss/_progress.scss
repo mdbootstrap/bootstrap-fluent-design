@@ -1,0 +1,462 @@
+@include keyframes (progress-line) {
+  0% {
+    left: 0;
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    left: 0;
+    opacity: 0;
+    animation-timing-function: ease;
+  }
+  25%,
+  75% {
+    opacity: 1;
+  }
+  35% {
+    left: 45%;
+    animation-timing-function: linear;
+  }
+  65% {
+    left: 55%;
+    animation-timing-function: ease-in;
+  }
+  80%,
+  to {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+@include keyframes (progress-circle) {
+  0% {
+    transform: rotate(200deg);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  7% {
+    transform: rotate(320deg);
+    animation-timing-function: linear;
+  }
+  30% {
+    transform: rotate(430deg);
+    animation-timing-function: ease-in-out;
+  }
+  39% {
+    transform: rotate(650deg);
+    animation-timing-function: linear;
+  }
+  70% {
+    transform: rotate(775deg);
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  75% {
+    transform: rotate(905deg);
+  }
+  76% {
+    transform: rotate(905deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(905deg);
+    opacity: 0;
+  }
+}
+
+@include keyframes (progress-phone) {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.progress-cover {
+  padding: $progress-cover-padding;
+  .progress {
+    background-color: transparent;
+    &.fluent-position {
+      position: absolute;
+      top: $progress-cover-fluent-position-top;
+      left: $progress-cover-fluent-position-left;
+      transform: $progress-cover-fluent-transform;
+      margin: auto;
+      .progress-span {
+        position: absolute;
+        transform: $progress-cover-fluent-span-transform-rotate;
+        animation: $progress-cover-fluent-span-animation infinite;
+        opacity: 0;
+        &:after {
+          content: "";
+          position: absolute;
+        }
+        &:first-child {
+          animation-delay: $progress-cover-fluent-span-animation-delay-1;
+        }
+        &:nth-child(2) {
+          animation-delay: $progress-cover-fluent-span-animation-delay-2;
+        }
+        &:nth-child(3) {
+          animation-delay: $progress-cover-fluent-span-animation-delay-3;
+        }
+        &:nth-child(4) {
+          animation-delay: $progress-cover-fluent-span-animation-delay-4;
+        }
+      }
+      &.progress-small {
+        width: $progress-cover-small-width;
+        height: $progress-cover-small-height;
+        padding: $progress-cover-small-padding;
+        .progress-span {
+          width: $progress-cover-small-span-width;
+          height: $progress-cover-small-span-height;
+          &:after {
+            width: $progress-cover-small-span-after-width;
+            height: $progress-cover-small-span-after-height;
+            border-radius: $progress-cover-small-span-after-br;
+          }
+        }
+      }
+      &.progress-medium {
+        width: $progress-cover-medium-width;
+        height: $progress-cover-medium-height;
+        padding: $progress-cover-medium-padding;
+        .progress-span {
+          width: $progress-cover-medium-span-width;
+          height: $progress-cover-medium-span-height;
+          &:after {
+            width: $progress-cover-medium-span-after-width;
+            height: $progress-cover-medium-span-after-height;
+            border-radius: $progress-cover-medium-span-after-br;
+          }
+        }
+      }
+      &.progress-large {
+        width: $progress-cover-large-width;
+        height: $progress-cover-large-height;
+        padding: $progress-cover-large-padding;
+        .progress-span {
+          width: $progress-cover-large-span-width;
+          height: $progress-cover-large-span-height;
+          &:after {
+            width: $progress-cover-large-span-after-width;
+            height: $progress-cover-large-span-after-height;
+            border-radius: $progress-cover-large-span-after-br;
+          }
+        }
+      }
+    }
+    &.fluent {
+      border: 0;
+      height: $progress-cover-fluent-height;
+      border-radius: 0;
+      margin-top: $progress-cover-fluent-mt;
+    }
+  }
+  .progress-fluent-line {
+    width: 100%;
+    .progress-span {
+      position: absolute;
+      display: flex;
+      opacity: 0;
+      animation-delay: $progress-cover-fluent-line-animation-delay;
+      animation: $progress-cover-fluent-line-animation infinite;
+      &:first-child {
+        animation-delay: $progress-cover-fluent-line-animation-delay-first;
+        &::after {
+          left: $progress-cover-fluent-line-animation-delay-first-after;
+        }
+      }
+      &:nth-child(2) {
+        animation-delay: $progress-cover-fluent-line-animation-delay-second;
+        &:after {
+          left: $progress-cover-fluent-line-animation-delay-second-after;
+        }
+      }
+      &:nth-child(3) {
+        animation-delay: $progress-cover-fluent-line-animation-delay-third;
+        &:after {
+          left: $progress-cover-fluent-line-animation-delay-third-after;
+        }
+      }
+      &:nth-child(4) {
+        animation-delay: $progress-cover-fluent-line-animation-delay-fourth;
+        &:after {
+          left: $progress-cover-fluent-line-animation-delay-fourth-after;
+        }
+      }
+      &:nth-child(5) {
+        animation-delay: $progress-cover-fluent-line-animation-delay-fifth;
+        &:after {
+          left: $progress-cover-fluent-line-animation-delay-fifth-after;
+          @media (min-width: 1440px) {
+            left: $progress-cover-fluent-line-animation-delay-fifth-media-1;
+          }
+        }
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        display: flex;
+        border-radius: $progress-cover-fluent-line-after-br;
+      }
+    }
+    &.progress-primary {
+      .progress-span {
+        &:after {
+          background: $blue;
+        }
+      }
+    }
+    &.progress-secondary {
+      .progress-span {
+        &:after {
+          background: $progress-cover-fluent-line-primary-span-after-bg;
+        }
+      }
+    }
+    &.progress-default {
+      .progress-span {
+        &:after {
+          background: $dark-purple;
+        }
+      }
+    }
+    &.progress-warning {
+      .progress-span {
+        &:after {
+          background: $warning-color;
+        }
+      }
+    }
+    &.progress-danger {
+      .progress-span {
+        &:after {
+          background: $deep-orange;
+        }
+      }
+    }
+    &.progress-success {
+      .progress-span {
+        &:after {
+          background: $dark-green;
+        }
+      }
+    }
+    &.progress-info {
+      .progress-span {
+        &:after {
+          background: $turquoise;
+        }
+      }
+    }
+    &.progress-megent {
+      .progress-span {
+        &:after {
+          background: $megent;
+        }
+      }
+    }
+    &.progress-small {
+      .progress-span {
+        &:after {
+          width: 3px;
+          height: 3px;
+        }
+      }
+    }
+    &.progress-medium {
+      .progress-span {
+        &:after {
+          width: 6px;
+          height: 6px;
+        }
+      }
+    }
+    &.progress-large {
+      .progress-span {
+        &:after {
+          width: 9px;
+          height: 9px;
+        }
+      }
+    }
+  }
+  &.progress-cover-primary {
+    .progress.fluent-position {
+      .progress-span {
+        &:after {
+          background: $blue;
+        }
+      }
+    }
+  }
+  &.progress-cover-secondary {
+    .progress.fluent-position {
+      .progress-span {
+        &:after {
+          background: $progress-cover-fluent-line-primary-span-after-bg;
+        }
+      }
+    }
+  }
+  &.progress-cover-default {
+    .progress.fluent-position {
+      .progress-span {
+        &:after {
+          background: $dark-purple;
+        }
+      }
+    }
+  }
+  &.progress-cover-warning {
+    .progress.fluent-position {
+      .progress-span {
+        &:after {
+          background: $warning-color;
+        }
+      }
+    }
+  }
+  &.progress-cover-danger {
+    .progress.fluent-position {
+      .progress-span {
+        &:after {
+          background: $deep-orange;
+        }
+      }
+    }
+  }
+  &.progress-cover-success {
+    .progress.fluent-position {
+      .progress-span {
+        &:after {
+          background: $dark-green;
+        }
+      }
+    }
+  }
+  &.progress-cover-info {
+    .progress.fluent-position {
+      .progress-span {
+        &:after {
+          background: $turquoise;
+        }
+      }
+    }
+  }
+  &.progress-cover-megent {
+    .progress.fluent-position {
+      .progress-span {
+        &:after {
+          background: $megent;
+        }
+      }
+    }
+  }
+  &[class^=progress-] {
+    position: relative;
+  }
+}
+
+.progress-fluent {
+  border-radius: 0 !important;
+}
+
+.progress-mobile {
+  [class*=progress-] {
+    display: inline-block;
+    margin: 12px 2px;
+    border-radius: 100%;
+    animation: progress-phone 3.2s infinite;
+    animation-timing-function: cubic-bezier(0.030, 0.615, 0.995, 0.415);
+    animation-fill-mode: both;
+    &:first-child {
+      animation-delay: 1s;
+    }
+    &:nth-child(2) {
+      animation-delay: 0.8s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+    &:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+    &:nth-child(5) {
+      animation-delay: 0.2s;
+    }
+    &:nth-child(6) {
+      animation-delay: 0;
+    }
+  }
+  &-primary {
+    .progress-span-mobile {
+      background: $blue;
+    }
+  }
+  &-default {
+    .progress-span-mobile {
+      background: $purple;
+    }
+  }
+  &-secondary {
+    .progress-span-mobile {
+      background: $progress-cover-fluent-line-primary-span-after-bg;
+      ;
+    }
+  }
+  &-success {
+    .progress-span-mobile {
+      background: $dark-green;
+    }
+  }
+  &-danger {
+    .progress-span-mobile {
+      background: $deep-orange;
+    }
+  }
+  &-warning {
+    .progress-span-mobile {
+      background: $warning-color;
+    }
+  }
+  &-info {
+    .progress-span-mobile {
+      background: $turquoise;
+    }
+  }
+  &-megent {
+    .progress-span-mobile {
+      background: $megent;
+    }
+  }
+  &.progress-small {
+    .progress-span-mobile {
+      width: $progress-mobile-span-small-width;
+      height: $progress-mobile-span-small-height;
+    }
+  }
+  &.progress-medium {
+    .progress-span-mobile {
+      width: $progress-mobile-span-medium-width;
+      height: $progress-mobile-span-medium-height;
+    }
+  }
+  &.progress-large {
+    .progress-span-mobile {
+      width: $progress-mobile-span-large-width;
+      height: $progress-mobile-span-large-height;
+    }
+  }
+}

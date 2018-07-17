@@ -1,0 +1,232 @@
+// Variables
+// Fonts
+$open-font-path: "../font/OpenSans/" !default;
+
+// Colors
+$warning-color:    #FFB900 !default;
+$crimson:          #E74856 !default;
+$blue:             #0078D7 !default;
+$cyan:             #0099BC !default;
+$dimgrey:          #7A7574 !default;
+$grey:             #767676 !default;
+$amber:            #FF8C00 !default;
+$red:              #E81123 !default;
+$dark-blue:        #0063B1 !default;
+$steel-blue:       #2D7D9A !default;
+$dark-dimgrey:     #5D5A58 !default;
+$dark-grey:        #4C4A48 !default;
+$orange:           #F7630C !default;
+$pink:             #EA005E !default;
+$light-violet:     #8E8CD8 !default;
+$turquoise:        #00B7C3 !default;
+$bluegrey:         #68768A !default;
+$steel:            #69797E !default;
+$chocolate:        #CA5010 !default;
+$medium-violet:    #C30052 !default;
+$slate-blue:       #6B69D6 !default;
+$teal:             #038387 !default;
+$dark-bluegrey:    #515C6B !default;
+$dark-steel:       #4A5459 !default;
+$deep-orange:      #DA3B01 !default;
+$megent:           #E3008C !default;
+$light-purple:     #8764B8 !default;
+$light-sea:        #00B294 !default;
+$slate-grey:       #567C73 !default;
+$olive:            #647C64 !default;
+$salmon:           #EF6950 !default;
+$dark-pink:        #BF0077 !default;
+$dark-purple:      #744DA9 !default;
+$dark-cyan:        #018574 !default;
+$green-grey:       #486860 !default;
+$dark-olive:       #525E54 !default;
+$dark-coral:       #D13438 !default;
+$orchid:           #C239B3 !default;
+$medium-orchid:    #B146C2 !default;
+$green:            #00CC6A !default;
+$grass-green:      #498205 !default;
+$sandy:            #847545 !default;
+$coral:            #FF4343 !default;
+$purple:           #9A0089 !default;
+$dark-orchid:      #881798 !default;
+$forest-green:     #10893E !default;
+$dark-green:       #107C10 !default;
+$earth:            #7E735F !default;
+$black-base:       #000    !default;
+$white-base:       #fff    !default;
+$link-color:       #0069ba !default;
+
+$full-pallete: () !default;
+$full-palette: map-merge(
+  (
+    "warning-color": $warning-color,
+    "crimson":       $crimson,
+    "blue":          $blue,
+    "cyan":          $cyan,
+    "dimgrey":       $dimgrey,
+    "grey":          $grey,
+    "amber":         $amber,
+    "red":           $red,
+    "dark-blue":     $dark-blue,
+    "steel-blue":    $steel-blue,
+    "dark-dimgrey":  $dark-dimgrey,
+    "dark-grey":     $dark-grey,
+    "orange":        $orange,
+    "pink":          $pink,
+    "light-violet":  $light-violet,
+    "turquoise":     $turquoise,
+    "bluegrey":      $bluegrey,
+    "steel":         $steel,
+    "chocolate":     $chocolate,
+    "medium-violet": $medium-violet,
+    "slate-blue":    $slate-blue,
+    "teal":          $teal,
+    "dark-bluegrey": $dark-bluegrey,
+    "dark-steel":    $dark-steel,
+    "deep-orange":   $deep-orange,
+    "megent":        $megent,
+    "light-purple":  $light-purple,
+    "light-sea":     $light-sea,
+    "slate-grey":    $slate-grey,
+    "olive":         $olive,
+    "salmon":        $salmon,
+    "dark-pink":     $dark-pink,
+    "dark-purple":   $dark-purple,
+    "dark-cyan":     $dark-cyan,
+    "green-grey":    $green-grey,
+    "dark-olive":    $dark-olive,
+    "dark-coral":    $dark-coral,
+    "orchid":        $orchid,
+    "medium-orchid": $medium-orchid,
+    "green":         $green,
+    "grass-green":   $grass-green,
+    "sandy":         $sandy,
+    "coral":         $coral,
+    "purple":        $purple,
+    "dark-orchid":   $dark-orchid,
+    "forest-green":  $forest-green,
+    "dark-green":    $dark-green,
+    "earth":         $earth
+  ),
+  $full-pallete
+);
+
+$fluent-colors: () !default;
+$fluent-colors: map-merge(
+  (
+    "primary":   $blue,
+    "secondary": #c2c2c2,
+    "default":   $dark-purple,
+    "warning":   $warning-color,
+    "danger":    $deep-orange,
+    "success":   $dark-green,
+    "info":      $turquoise
+  ),
+  $fluent-colors
+);
+
+// Transitions
+$transition-basic: all .2s linear !default;
+
+// Border radius
+$border-radius-circle: 50% !default;
+
+// Dropdown
+$dropdown-menu-padding: 1rem !default;
+
+// Progress
+$progress-cover-padding:                                   2rem 0                                           !default;
+$progress-cover-fluent-position-top:                       50%                                              !default;
+$progress-cover-fluent-position-left:                      $progress-cover-fluent-position-top              !default;
+$progress-cover-fluent-transform:                          translateX(-50%) translateY(-50%)                !default;
+$progress-cover-fluent-span-transform-rotate:              rotate(220deg)                                   !default;
+$progress-cover-fluent-span-animation:                     progress-circle 6s                               !default;
+$progress-cover-fluent-span-animation-delay-1:             .28s                                             !default;
+$progress-cover-fluent-span-animation-delay-2:             $progress-cover-fluent-span-animation-delay-1*2  !default;
+$progress-cover-fluent-span-animation-delay-3:             $progress-cover-fluent-span-animation-delay-1*3  !default;
+$progress-cover-fluent-span-animation-delay-4:             $progress-cover-fluent-span-animation-delay-1*4  !default;
+$progress-cover-medium-height:                             3.125rem                                         !default;
+$progress-cover-medium-width:                              $progress-cover-medium-height                    !default;
+$progress-cover-medium-padding:                            .4375rem                                         !default;
+$progress-cover-medium-span-width:                         2.375rem                                         !default;
+$progress-cover-medium-span-height:                        $progress-cover-medium-span-width                !default;
+$progress-cover-medium-span-after-width:                   .375rem                                          !default;
+$progress-cover-medium-span-after-height:                  $progress-cover-medium-span-after-width          !default;
+$progress-cover-medium-span-after-br:                      $progress-cover-fluent-position-top              !default;
+$progress-cover-small-height:                              1.875rem                                         !default;
+$progress-cover-small-width:                               $progress-cover-small-height                     !default;
+$progress-cover-small-padding:                             .1875rem                                         !default;
+$progress-cover-small-span-width:                          1.25rem                                          !default;
+$progress-cover-small-span-height:                         $progress-cover-small-span-width                 !default;
+$progress-cover-small-span-after-width:                    .25rem                                           !default;
+$progress-cover-small-span-after-height:                   $progress-cover-small-span-after-width           !default;
+$progress-cover-small-span-after-br:                       $progress-cover-fluent-position-top              !default;
+$progress-cover-large-height:                              4.375rem                                         !default;
+$progress-cover-large-width:                               $progress-cover-large-height                     !default;
+$progress-cover-large-padding:                             .625rem                                          !default;
+$progress-cover-large-span-width:                          3.125rem                                         !default;
+$progress-cover-large-span-height:                         $progress-cover-large-span-width                 !default;
+$progress-cover-large-span-after-width:                    $progress-cover-medium-padding                   !default;
+$progress-cover-large-span-after-height:                   $progress-cover-large-span-after-width           !default;
+$progress-cover-large-span-after-br:                       $progress-cover-fluent-position-top              !default;
+$progress-cover-fluent-height:                             .25rem                                           !default;
+$progress-cover-fluent-mt:                                 1.5rem                                           !default;
+$progress-cover-fluent-line-animation-delay:               50ms                                             !default;
+$progress-cover-fluent-line-animation:                     progress-line 3.5s                               !default;
+$progress-cover-fluent-line-animation-delay-first:         $progress-cover-fluent-line-animation-delay      !default;
+$progress-cover-fluent-line-animation-delay-first-after:   -.75rem                                          !default;
+$progress-cover-fluent-line-animation-delay-second:        .1s                                              !default;
+$progress-cover-fluent-line-animation-delay-second-after:  -1.375rem                                        !default;
+$progress-cover-fluent-line-animation-delay-third:         .15s                                             !default;
+$progress-cover-fluent-line-animation-delay-third-after:   -2rem                                            !default;
+$progress-cover-fluent-line-animation-delay-fourth:        .2s                                              !default;
+$progress-cover-fluent-line-animation-delay-fourth-after:  -2.625rem                                        !default;
+$progress-cover-fluent-line-animation-delay-fifth:         .3s                                              !default;
+$progress-cover-fluent-line-animation-delay-fifth-after:   -3.25rem                                         !default;
+$progress-cover-fluent-line-animation-delay-fifth-media-1: -2.8rem                                          !default;
+$progress-cover-fluent-line-after-br:                      $progress-cover-fluent-position-top              !default;
+$progress-cover-fluent-line-primary-span-after-bg:         #c2c2c2                                          !default;
+$progress-mobile-span-small-width:                         .3125rem                                         !default;
+$progress-mobile-span-small-height:                        $progress-mobile-span-small-width                !default;
+$progress-mobile-span-medium-width:                        $progress-cover-medium-padding                   !default;
+$progress-mobile-span-medium-height:                       $progress-cover-medium-padding                   !default;
+$progress-mobile-span-large-width:                         $progress-cover-large-padding                    !default;
+$progress-mobile-span-large-height:                        $progress-cover-large-padding                    !default;
+
+// Tabs
+$fluent-tabs-nav-item-mx:                          .8rem          !default;
+$fluent-tabs-nav-link-pb:                          .2rem          !default;
+$fluent-tabs-font-size:                            1.2rem         !default;
+$fluent-tabs-nav-link-color:                       #616161        !default;
+$fluent-tabs-nav-link-active-color:                #212121        !default;
+$fluent-tabs-nav-link-active-border-bottom-height: 2px            !default;
+$fluent-tabs-nav-link-active-border-font-weight:   400            !default;
+$fluent-tabs-nav-link-disabled-color:              rgba(0,0,0,.3) !default;
+$fluent-tabs-tab-content-my:                       2.5rem         !default;
+
+// Carousel
+$carousel-indicators-width:         0.625rem                   !default;
+$carousel-indicators-height:        $carousel-indicators-width !default;
+$carousel-indicators-border-radius: $border-radius-circle      !default;
+
+// Pagination
+$pagination-item-mr:             .75rem                             !default;
+$pagination-link-disabled-color: #767676                            !default;
+$pagination-link-color:          $dark-blue                         !default;
+$pagination-link-hover-color:    $blue                              !default;
+$pagination-link-focus-color:    $fluent-tabs-nav-link-active-color !default;
+$pagination-link-active-color:   $fluent-tabs-nav-link-active-color !default;
+$pagination-link-icon-font-size: .8rem                              !default;
+
+// Blockquote
+$blockquote-padding-y: .5rem !default;
+$blockquote-padding-x: 1rem  !default;
+
+// Button
+$btn-margin-basic:            .375rem !default;
+$btn-padding-y-basic:         .84rem !default;
+$btn-padding-x-basic:         2.14rem !default;
+$btn-font-size-basic:         .81rem !default;
+
+// Table
+$table-th-lg-min-width: 9rem !default;
+$table-th-sm-min-width: 6rem !default;

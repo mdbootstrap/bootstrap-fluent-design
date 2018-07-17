@@ -1,0 +1,21 @@
+.breadcrumb {
+  border-radius: 0;
+  a {
+    color: #00B7C3;
+  }
+}
+
+.light-font .breadcrumb-item+.breadcrumb-item::before,
+.light-font .breadcrumb-item.active {
+  color: $white-base;
+}
+
+.font-up-bold .breadcrumb-item+.breadcrumb-item::before {
+  content: none;
+}
+
+.font-up-bold .breadcrumb-item a h5::after {
+  content: "/";
+  margin-left: 1rem;
+  color: #868e96;
+}

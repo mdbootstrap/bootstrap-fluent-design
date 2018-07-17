@@ -1,0 +1,20 @@
+// Alerts
+@each $key, $val in $fluent-colors {
+  .alert-#{$key} {
+    background-color: $val !important;
+    color: set-notification-text-color($val);
+    .alert-link {
+      color: set-notification-text-color($val);
+    }
+  }
+}
+.alert {
+  border-radius: 0;
+  border: 0;
+  .alert-link {
+    font-weight: 300;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

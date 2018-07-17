@@ -1,0 +1,142 @@
+.welcome {
+  .svg-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    .shape {
+      fill: transparent;
+      stroke-dasharray: 475;
+      stroke-dashoffset: -474;
+      stroke-width: 3px;
+      stroke: #19f6e8;
+    }
+    &:hover .shape {
+      animation: 6s drawing linear forwards;
+    }
+  }
+  .btn-welcome {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@include keyframes (drawing) {
+  0% {
+    stroke-dasharray: 475;
+    stroke-dashoffset: -474;
+    stroke-width: 3px;
+  }
+  20% {
+    stroke-dasharray: 152;
+    stroke-dashoffset: -92.8;
+    stroke-width: 6px;
+  }
+  40% {
+    stroke-dasharray: 152*2;
+    stroke-dashoffset: -92.8*2;
+    stroke-width: 4px;
+  }
+  60% {
+    stroke-dasharray: 152*3;
+    stroke-dashoffset: -92.8*3;
+    stroke-width: 4px;
+  }
+  80% {
+    stroke-dasharray: 152*4;
+    stroke-dashoffset: -92.8*4;
+    stroke-width: 4px;
+  }
+  100% {
+    stroke-dasharray: 475;
+    stroke-dashoffset: -474;
+    stroke-width: 3px;
+  }
+}
+
+@keyframes rotate {
+  0%,
+  10% {
+    transform: rotateX(70deg) rotateZ(45deg);
+  }
+  25%,
+  35% {
+    transform: rotateX(70deg) rotateZ(135deg);
+  }
+  50%,
+  65% {
+    transform: rotateX(70deg) rotateZ(225deg);
+  }
+  75%,
+  85% {
+    transform: rotateX(70deg) rotateZ(315deg);
+  }
+  100% {
+    transform: rotateX(70deg) rotateZ(405deg);
+  }
+}
+
+@keyframes scale {
+  0%,
+  10%,
+  70%,
+  100% {
+    transform: scaleY(.3) scaleX(.3);
+  }
+}
+
+.scale {
+  animation: scale 1s cubic-bezier(0.785, 0.135, 0.150, 0.860) infinite;
+  transform-style: preserve-3d;
+  transform-origin: 100% 100% 0;
+}
+
+.cube {
+  animation: rotate 4s .5s cubic-bezier(0.645, 0.045, 0.355, 1.000) infinite reverse;
+  transform-style: preserve-3d;
+  margin-bottom: -2.5rem;
+  margin-left: 34rem;
+  &:after,
+  &:before {
+    content: "";
+    will-change: transform;
+    display: block;
+    width: 4em;
+    height: 4em;
+    background: rgb(87, 62, 138);
+    position: absolute;
+  }
+  &:before {
+    transform: translateZ(4em);
+  }
+}
+
+.face {
+  position: absolute;
+  width: 4em;
+  height: 4em;
+  background: rgba($black-base, .4);
+  transform-style: preserve-3d;
+  background: $dark-purple;
+  border: 2px solid $black-base;
+  &:nth-child(1) {
+    transform: rotateX(90deg);
+    transform-origin: 50% 0;
+    background: rgb(80, 230, 255);
+  }
+  &:nth-child(2) {
+    transform: rotateX(90deg) translateZ(-4em);
+    transform-origin: 50% 0;
+    background: rgb(80, 230, 255);
+  }
+  &:nth-child(3) {
+    transform: rotateX(90deg) rotateY(-90deg);
+    transform-origin: 100% 0;
+    background: rgb(69, 144, 221);
+  }
+  &:nth-child(4) {
+    transform: rotateX(90deg) rotateY(-90deg) translateZ(4em);
+    transform-origin: 100% 0;
+    background: rgb(69, 144, 221);
+  }
+}

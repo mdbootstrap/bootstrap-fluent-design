@@ -1,0 +1,43 @@
+// Tabs
+.fluent-tabs {
+  border-bottom: none;
+  .nav-item {
+    margin: 0 $fluent-tabs-nav-item-mx;
+    &:first-child {
+      margin: 0 $fluent-tabs-nav-item-mx 0 0;
+    }
+    .nav-link {
+      padding: 0 0 $fluent-tabs-nav-link-pb 0;
+      font-size: $fluent-tabs-font-size;
+      color: $fluent-tabs-nav-link-color;
+      border: none;
+      border-radius: 0;
+      &.active {
+        border: none;
+        color: $fluent-tabs-nav-link-active-color;
+        border-bottom: $fluent-tabs-nav-link-active-border-bottom-height solid $dark-blue;
+        font-weight: $fluent-tabs-nav-link-active-border-font-weight;
+      }
+      &:hover {
+        border: none;
+        border-radius: 0;
+      }
+      &.active {
+        &:hover {
+          border-bottom: 2px solid $dark-blue;
+        }
+      }
+      &.disabled {
+        cursor: not-allowed;
+        color: $fluent-tabs-nav-link-disabled-color;
+        &:hover {
+          color: $fluent-tabs-nav-link-disabled-color;
+        }
+      }
+    }
+  }
+}
+.tab-content {
+  margin-top: $fluent-tabs-tab-content-my;
+  margin-bottom: $fluent-tabs-tab-content-my;
+}

@@ -1,0 +1,22 @@
+// Footers
+footer {
+  &.page-footer {
+    background: rgb(242,242,242);
+    bottom: 0;
+    color: $black-base;
+    .container-fluid {
+      width: auto;
+    }
+    .footer-copyright {
+      overflow: hidden;
+      background-color: rgba(grey, .05);
+      color: rgba($black-base, .6);
+    }
+    a {
+      color: $black-base;
+    }
+  }
+  .mi-Search{
+    transform: rotate(270deg);
+  }
+}

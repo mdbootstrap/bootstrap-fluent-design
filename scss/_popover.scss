@@ -1,0 +1,13 @@
+.popover {
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 0;
+  & .arrow {
+    display: none;
+  }
+  &-body {
+    background-color: rgba($grey, .12);
+  }
+  &-header {
+    background-color: rgba($grey, .1);
+  }
+}

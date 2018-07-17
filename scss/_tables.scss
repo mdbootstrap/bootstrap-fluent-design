@@ -1,0 +1,16 @@
+// Tables
+table {
+  &.table {
+    thead {
+      th {
+        border-top: none;
+      }
+    }
+    .th-lg {
+      min-width: $table-th-lg-min-width;
+    }
+    .th-sm {
+      min-width: $table-th-sm-min-width;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.badge {
+  padding: .15em .3em .15em .3em;
+  border-radius: 0;
+  box-shadow: none;
+  min-height: 1rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  @each $key, $val in $fluent-colors {
+    &.badge-#{$key} {
+      background-color: $val;
+      color: set-notification-text-color($val);
+    }
+  }
+}

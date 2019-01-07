@@ -1,4 +1,4 @@
-[![Fluent Design for Bootstrap](https://mdbootstrap.com/img/Marketing/free/main/other/fluent-design-kit.jpg)](https://mdbootstrap.com/freebies/jquery/fluent-kit/)
+[![Fluent Design for Bootstrap](https://mdbootstrap.com/img/Marketing/products/other/fluent-design-kit.jpg)](https://mdbootstrap.com/freebies/jquery/fluent-kit/)
 
 # Fluent Design for Bootstrap 4 
 

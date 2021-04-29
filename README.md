@@ -1,54 +1,19 @@
-[![Fluent Design for Bootstrap](https://mdbootstrap.com/img/Marketing/products/other/fluent-design-kit.jpg)](https://mdbootstrap.com/freebies/jquery/fluent-kit/)
 
-# Fluent Design for Bootstrap 4 
+# Fluent Design for the newest Bootstrap 5
+Fluent Design from MDB inspired by Microsoft Design 
 
-**100+** Fluent UI elements, **1400+** Fluent icons, **74** CSS animations, .scss files, templates, tutorials and many more. **Free for personal and commercial use**.
-
-Created by MDB: Trusted by **500 000+** developers & designers. Used by such companies like Nike, Samsung, Amazon, Ikea, Sony and NASA.
+<a href="https://github.com/mdbootstrap/bootstrap-material-design/blob/master/License.pdf"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a>
 
 ________
 
-# Most important features:
 
-1. 100+ UI elements
+# Quick Start:
 
-2. 1400+ icons
+**Written Tutorial**: https://mdbootstrap.com/docs/standard/getting-started/quick-start/
 
-3. Plenty of useful templates
+**Video Tutorial**: https://www.youtube.com/watch?v=XavTclE2U9Y
 
-4. Easy installation
-
-5. Easy to use and customize
-
-6. Active community
-
-7. Dedicated support forum
-
-8. Detailed documentation
-
-# Demo:  
-**Main demo**: https://mdbootstrap.com/previews/fluent/html/demo.html
-# Quick Start (5 minutes):
-**Written Tutorial**: https://mdbootstrap.com/mdb-quick-start/
-
-**Video Tutorial**:https://www.youtube.com/watch?v=cXTThxoywNQ&t=9s
-
-# Additional tutorials:
-
-**MDB - Bootstrap tutorial**: https://mdbootstrap.com/bootstrap-tutorial/
-
-**MDB - Wordpress tutorial**: https://mdbootstrap.com/wordpress-tutorial/
-
-# Documentation:
-
-**Huge, detailed documentation available online on**: https://mdbootstrap.com/
-
-# Live Preview
-
-[![Fluent Design for Bootstrap](https://mdbootstrap.com/wp-content/uploads/2018/07/Screenshot_9.jpg)](https://mdbootstrap.com/bootstrap-fluent-design-ui-kit/)
-[![Fluent Design for Bootstrap](https://mdbootstrap.com/wp-content/uploads/2018/07/Screenshot_10.jpg)](https://mdbootstrap.com/bootstrap-fluent-design-ui-kit/)
-[![Fluent Design for Bootstrap](https://mdbootstrap.com/wp-content/uploads/2018/07/Screenshot_11.jpg)](https://mdbootstrap.com/bootstrap-fluent-design-ui-kit/)
-[![Fluent Design for Bootstrap](https://mdbootstrap.com/wp-content/uploads/2018/07/Screenshot_12.jpg)](https://mdbootstrap.com/bootstrap-fluent-design-ui-kit/)
+________
 
 # Highlights:  
 **Components**  
@@ -66,12 +31,6 @@ Chrome, Firefox, IE, Safari, Opera, Microsoft Edge - Fluent Kit loves all browse
 **Modularity**  
 Fluent Design for Bootstrap comes with both, compiled, ready to use libraries including all features as well as modules for CSS (SASS files) and JS. That allows you to create your custom library including only elements which you really use in your project.  
 
-**Frequent updates**  
-Fluend Kit becomes better **every month**. We love the project and enhance as much as possible.  
-
-**Technical support**  
-We really care about reliability. If you have any questions - do not hesitate to contact us.  
-
 **Active community**  
 Our society grows day by day. Visit **our forum** and check how it is to be a part of our family.  
 
@@ -87,42 +46,90 @@ Arrenged and well documented .scss files can't wait until you compile them.
 **Detailed documentation:**  
 We give you detailed documentation at your disposal. It will help you to implement your ideas easily.  
 
-**Technical support**  
-We care about reliability. If you have any questions - do not hesitate to contact us.
-
 **Free for personal and commercial use**  
 Our license is user friendly. Feel free to use Fluent Kit for both private as well as commercial projects.  
 
+
+# Live Preview
+
+[Main demo](https://mdbgo.io/marta-szymanska/mdb5-demo-free-fluent/free/components/full-demo.html) - check the functionality of all components
+
+# Cards
+
+<p></p>
+
+<a href="https://mdbootstrap.com/docs/standard/components/cards/" alt="Fluent Design Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/fluent-cards.png">
+  </p>
+</a>
+
+# Carousel
+
+<p></p>
+
+<a href="https://mdbootstrap.com/docs/standard/components/carousel/" alt="Fluent Design Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/demo-carousel.gif">
+  </p>
+</a>
+
+# Buttons
+
+<p></p>
+
+<a href="https://mdbootstrap.com/docs/standard/components/buttons/" alt="Fluent Design Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/fluent-buttons.png">
+  </p>
+</a>
+
+# Progress
+
+<p></p>
+
+<a href="https://mdbootstrap.com/docs/standard/components/progress/" alt="Fluent Design Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/fluent-progress.png">
+  </p>
+</a>
+
+# Footer
+
+<p></p>
+
+<a href="https://mdbootstrap.com/docs/standard/navigation/footer/" alt="Fluent Design Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/fluent-footer.png">
+  </p>
+</a>
+
+# Toasts
+
+<p></p>
+
+<a href="https://mdbootstrap.com/docs/standard/components/toasts/" alt="Fluent Design Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/fluent-toasts.png">
+  </p>
+</a>
+
+# Progress
+
+<p></p>
+
+<a href="https://mdbootstrap.com/docs/standard/components/progress/" alt="Fluent Design Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/fluent-blur-1.png">
+  </p>
+</a>
+
+<a href="https://mdbootstrap.com/docs/standard/components/progress/" alt="Fluent Design Bootstrap 5" rel="dofollow">
+  <p align="center">
+    <img src="https://mdbootstrap.com/img/Marketing/campaigns/fluent-blur-2.png">
+  </p>
+</a>
+
 A big **thank you to all our users** who are working with us to improve the software. We wouldn't be where we are without you.  
 
-# Useful Links:  
 
-Getting started: https://mdbootstrap.com/getting-started/  
-
-5 min quick start: https://mdbootstrap.com/mdb-quick-start/  
-
-Material Design + Bootstrap Tutorial: https://mdbootstrap.com/bootstrap-tutorial/  
-
-Material Design + WordPress Tutorial: https://mdbootstrap.com/wordpress-tutorial/  
-
-Freebies: https://mdbootstrap.com/freebies/  
-
-Premium Templates: https://mdbootstrap.com/templates/  
-
-
-# Social Media:  
-
-Twitter: https://twitter.com/MDBootstrap  
-
-Facebook: https://www.facebook.com/mdbootstrap  
-
-Pinterest: https://pl.pinterest.com/mdbootstrap 
-
-Google+: https://plus.google.com/u/0/b/107863090883699620484/+Mdbootstrap/posts  
-
-Dribbble: https://dribbble.com/mdbootstrap
-
-LinkedIn: https://www.linkedin.com/company/material-design-for-bootstrap
-
-
-# Visit our website: https://mdbootstrap.com/

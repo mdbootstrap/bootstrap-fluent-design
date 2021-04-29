@@ -3,7 +3,7 @@
   <a href="https://mdbootstrap.com/freebies/fluent-design/"  target="_blank"><img width="80" src="https://mdbootstrap.com/img/Marketing/general/logo/medium/mdb.png" alt="Material-UI logo"></a></p>
 </p>
 
-<h2 align="center">Fluent Design from MDB inspired by Microsoft Design for the newest Bootstrap 5</h2>
+<h2 align="center">Fluent Design for the newest Bootstrap 5</h2>
 
 <p align="center">Components in the newest Bootstrap 5 and Fluent Design. Completely new design using the latest Bootstrap</p>
 

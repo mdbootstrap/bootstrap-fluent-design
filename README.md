@@ -7,27 +7,6 @@
 
 <p align="center">Components in the newest Bootstrap 5 and Fluent Design. Completely new design using the latest Bootstrap</p>
 
-# Installation
-
-Create, deploy and host anything with a single command using <a href="https://mdbootstrap.com/docs/standard/cli/"><b>open source deployment tool & free hosting</b></a>
-
-There's also <a href="https://mdbootstrap.com/docs/standard/cli/quick-start/"><b>written version</b></a> of quick start available to show the simplicity of using MDB CLI tool.
-
-To start using MDB GO / CLI install it with one command:
-
-```
-npm install -g mdb-cli
-```
-
-Then run:
-
-```
-mdb publish
-```
-
-That's it. Your project is available on the Internet.
-
-
 # Highlights  
 
 **Free for personal and commercial use**  
